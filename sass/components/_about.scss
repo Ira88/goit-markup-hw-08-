@@ -1,0 +1,93 @@
+
+    .about{
+    padding-top: 93px;
+    padding-left: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1600px;
+    &-item{
+      padding-bottom: 10px;
+      & .container{
+        width: 1170px;
+        height: 98px;
+        }
+    }
+    &-list{
+      display: flex;
+      column-gap: 30px;
+      padding-bottom: 94px;
+     }
+    &-title{
+      padding-bottom:50px ;
+      text-align: center;
+     }
+     &-title {
+      font-family: 'Roboto', sans-serif;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 42px;
+      letter-spacing: 0.03em;
+        color:  var(--primary-text-color);
+      }
+      &-description{
+        font-family: 'Roboto', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: 0.03em;
+        color: #757575;
+      }
+      &-item-title{
+        font-family: 'Roboto', sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 19px;
+        letter-spacing: 0.03em;
+        color: #212121;
+      }
+    }
+    .about-item-item{
+      position: relative;
+       }
+    .conteiner-wrapper .container{
+      width: 270px;
+      min-height: 70px;
+      max-height: 98px;
+    }
+    .icon-group{
+      background-color:#F5F4FA;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 270px;
+      height: 120px;
+      margin-bottom: 30px;
+      border-radius: 4px;
+    }
+    .desc-wrapper .container{
+      width: 1170px;
+      height: 386px;
+      padding-bottom: 94px;
+    }
+      .text{
+        font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    width: 370px;
+    height: 70px;
+    background: rgba(47, 48, 58, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 0px;
+}
