@@ -476,88 +476,6 @@ h1, h2, h3, h4, h5, h6, p, ul {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.about {
-  padding-top: 93px;
-  padding-left: 0px;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 1600px;
-}
-.about-item {
-  padding-bottom: 10px;
-}
-.about-item .container {
-  width: 1170px;
-  height: 98px;
-}
-.about-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-column-gap: 30px;
-     -moz-column-gap: 30px;
-          column-gap: 30px;
-  padding-bottom: 94px;
-}
-.about-title {
-  padding-bottom: 50px;
-  text-align: center;
-}
-.about-title {
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 42px;
-  letter-spacing: 0.03em;
-  color: var(--primary-text-color);
-}
-.about-description {
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
-  letter-spacing: 0.03em;
-  color: #757575;
-}
-.about-item-title {
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 19px;
-  letter-spacing: 0.03em;
-  color: #212121;
-}
-
-.about-item-item {
-  position: relative;
-}
-
-.conteiner-wrapper .container {
-  width: 270px;
-  min-height: 70px;
-  max-height: 98px;
-}
-
-.icon-group {
-  background-color: #F5F4FA;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: 270px;
-  height: 120px;
-  margin-bottom: 30px;
-  border-radius: 4px;
-}
-
 .desc-wrapper .container {
   width: 1170px;
   height: 386px;
@@ -1635,7 +1553,7 @@ h1, h2, h3, h4, h5, h6, p, ul {
 }
 @media screen and (min-width: 768px) {
   .flex-container {
-    height: 80px;
+    height: 60px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1660,7 +1578,12 @@ h1, h2, h3, h4, h5, h6, p, ul {
     width: 1600px;
   }
 }
-.about-item {
+@media screen and (max-width: 480px) {
+  .about-item {
+    padding-bottom: 30px;
+  }
+}
+.about-item .container {
   padding-bottom: 10px;
 }
 @media screen and (min-width: 480px) {
@@ -1692,14 +1615,14 @@ h1, h2, h3, h4, h5, h6, p, ul {
     display: -ms-flexbox;
     display: flex;
     padding-bottom: 60px;
+    -webkit-column-gap: 30px;
+       -moz-column-gap: 30px;
+            column-gap: 30px;
   }
 }
 @media screen and (min-width: 1200px) {
   .about-list {
     padding-bottom: 94px;
-    -webkit-column-gap: 30px;
-       -moz-column-gap: 30px;
-            column-gap: 30px;
   }
 }
 .about-title {
@@ -1729,25 +1652,50 @@ h1, h2, h3, h4, h5, h6, p, ul {
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
-  line-height: 19px;
+  line-height: 16px;
   letter-spacing: 0.03em;
   color: #212121;
+}
+@media screen and (max-width: 480px) {
+  .about-item-title {
+    text-align: center;
+  }
 }
 
 .about-item-item {
   position: relative;
 }
 
-.conteiner-wrapper .container {
-  width: 270px;
-  min-height: 70px;
-  max-height: 98px;
+@media screen and (min-width: 480px) {
+  .conteiner-wrapper .container {
+    height: 76px;
+    width: 450px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .conteiner-wrapper .container {
+    width: 270px;
+    min-height: 74px;
+    max-height: 76px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .conteiner-wrapper .container {
+    min-height: 70px;
+    max-height: 98px;
+  }
 }
 
 .icon-group {
   background-color: #F5F4FA;
   margin-bottom: 30px;
   border-radius: 4px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 @media screen and (min-width: 480px) {
   .icon-group {
@@ -1759,12 +1707,6 @@ h1, h2, h3, h4, h5, h6, p, ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
     width: 100%;
   }
 }

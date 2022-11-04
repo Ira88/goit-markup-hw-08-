@@ -7,9 +7,7 @@ background-image: linear-gradient(
  rgba(47, 48, 58, 0.4),
  rgba(47, 48, 58, 0.4)),
 url(../imeges/fon.png);
-background-repeat: no-repeat;
-background-position: center;
-background-size: cover;
+
 
 @media screen and (min-width:480px) {
   width: 480px;
@@ -22,6 +20,9 @@ background-size: cover;
 @media screen and (min-width: 1200px) {
   width: 1600px;
   height: 600px;
+  background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
 }
 
 & .container{

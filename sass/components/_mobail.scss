@@ -69,6 +69,7 @@
     color: #212121;
     }
     
+  
       &-current {
         color:  #212121;
         text-decoration: none;
@@ -133,7 +134,7 @@
     }
     
     @media screen and (min-width: 768px) {
-        height: 80px;
+        height: 60px;
     }
     @media screen and (min-width: 1200px) {
         height: 80px;
@@ -154,9 +155,13 @@
     }
 
     &-item{
-      padding-bottom: 10px;
+        @media screen and (max-width:480px) {
+            padding-bottom: 30px;
+            
+            }
 
       & .container{
+        padding-bottom: 10px;
         @media screen and (min-width:480px) {
             width: 450px;
             height: 994px;}
@@ -173,17 +178,17 @@
     &-list{
         @media screen and (min-width:480px) {
         padding-bottom: 30px;
-        
+
         }
         
         @media screen and (min-width: 768px) {
             display: flex;
             padding-bottom: 60px;
-            
+            column-gap: 30px;
         }
         @media screen and (min-width: 1200px) {
         padding-bottom: 94px;
-        column-gap: 30px;
+        
         }
 
      }
@@ -214,36 +219,51 @@
         font-style: normal;
         font-weight: 500;
         font-size: 14px;
-        line-height: 19px;
+        line-height: 16px;
         letter-spacing: 0.03em;
         color: #212121;
+        @media screen and (max-width:480px){
+     
+            text-align: center;
+        }
       }
     }
     .about-item-item{
       position: relative;
        }
     .conteiner-wrapper .container{
-      width: 270px;
-      min-height: 70px;
-      max-height: 98px;
-    
+        @media screen and (min-width:480px) {
+           height: 76px;
+           width: 450px;
+            }
+            
+            @media screen and (min-width: 768px) {
+               width: 270px;
+                min-height: 74px;
+                max-height: 76px;
+                
+            }
+            @media screen and (min-width: 1200px) {
+            
+                min-height: 70px;
+                max-height: 98px;
+            }
     }
     .icon-group{
      background-color:#F5F4FA;
       margin-bottom: 30px;
       border-radius: 4px;
-      
+      align-items: center;
+      justify-content: center;
 
       @media screen and (min-width:480px) {
-
+    
         width: 100%;
         }
         
         @media screen and (min-width: 768px) {
-      
+
             display: flex;
-            align-items: center;
-            justify-content: center;
             width: 100%;
         }
         @media screen and (min-width: 1200px) {
