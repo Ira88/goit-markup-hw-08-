@@ -154,20 +154,6 @@
         width: 1600px;
     }
 
-    &-wrapper .container{
-      @media screen and (min-width:480px) {
-        width: 450px;
-        height: 76px;
-      }
-    @media screen and (min-width: 768px) {
-        width: 354px;
-        height: 76px;
-    }
-    @media screen and (min-width: 1200px) {
-        width: 270px;
-        height: 98px;
-    }
-    }
 
     &-item{
         @media screen and (max-width:480px) {
