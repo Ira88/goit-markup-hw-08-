@@ -89,7 +89,6 @@
 
                 padding: 32px 0;
             }  
-
         }
         &.active{
           position: relative;
@@ -158,22 +157,27 @@
     &-item{
         @media screen and (max-width:480px) {
             padding-bottom: 30px;
-            
             }
 
-      & .container{
+      &-.container{
         padding-bottom: 10px;
+
         @media screen and (min-width:480px) {
-            width: 450px;
-            height: 994px;}
-        @media screen and (min-width: 768px) {
-            width: 738px;
-            height: 480px;
-        }
-        @media screen and (min-width: 1200px) {
-            width: 1170px;
-            height: 98px;
-        }
+          height: 76px;
+          width: 450px;
+           }
+           
+           @media screen and (min-width: 768px) {
+              width: 270px;
+               min-height: 74px;
+               max-height: 76px;
+               
+           }
+           @media screen and (min-width: 1200px) {
+               min-height: 70px;
+               max-height: 98px;
+           }
+       
         }
     }
     &-list{
@@ -235,21 +239,17 @@
       position: relative;
        }
     .conteiner-wrapper .container{
-        @media screen and (min-width:480px) {
-           height: 76px;
-           width: 450px;
-            }
-            
-            @media screen and (min-width: 768px) {
-               width: 270px;
-                min-height: 74px;
-                max-height: 76px;
-                
-            }
-            @media screen and (min-width: 1200px) {
-                min-height: 70px;
-                max-height: 98px;
-            }
+      @media screen and (min-width:480px) {
+        width: 450px;
+        height: 994px;}
+    @media screen and (min-width: 768px) {
+        width: 738px;
+        height: 480px;
+    }
+    @media screen and (min-width: 1200px) {
+        width: 1170px;
+        height: 98px;
+    }
     }
     .icon-group{
      background-color:#F5F4FA;
@@ -259,18 +259,19 @@
       justify-content: center;
 
       @media screen and (min-width:480px) {
-    
         width: 100%;
         }
         
         @media screen and (min-width: 768px) {
-
             display: flex;
-   
+            flex-wrap: wrap;
+            width: 354px;
+            height: 120px;
+           
         }
         @media screen and (min-width: 1200px) {
             width: 270px;
-            height: 120px;
+        
         }
 
 
@@ -314,8 +315,9 @@
         height: 1285px;
         }
         @media screen and (min-width: 1200px) {
-            max-width: 1600px;
+           width: 1600px;
             height: 708px;
+
         }
 
     &-container{
@@ -329,7 +331,6 @@
                 height: 428px;
                 padding-bottom: 94px;
             }
-
     }
    &-title{
        text-align: center;
@@ -344,8 +345,6 @@
         
         }
 
-
-
    }
    &-title{
     font-family: 'Roboto', sans-serif;
@@ -357,15 +356,38 @@
       color:  var(--primary-text-color);
    }
    &-list{
-    display: flex;
-    column-gap: 30px;
+    @media screen and (min-width:480px) {
+      width: 100%;
+      justify-content: center;
+       }
+   
+      @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 30px;
+      }
+      @media screen and (min-width: 1200px) {
+        display: flex;
+        column-gap: 30px;
+      }
+
+
    }
    &-item{
-    width: 270px;
-    height: 428px;
     border-radius: 0px 0px 4px 4px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     background-color: #fff;
+
+    @media screen and (min-width:480px) {
+    margin-bottom: 30px;
+    }
+    @media screen and (min-width: 1200px) {
+      width: 270px;
+      height: 428px;
+    }
+
+   
+    
     &-title{
       padding-bottom: 10px;
       font-family: 'Roboto';
@@ -408,7 +430,16 @@
   .container-item{
     padding-top: 30px;
     text-align: center;
-   }
+
+    @media screen and (min-width:480px) {
+      padding-bottom: 24px;
+  }
+ @media screen and (min-width: 1200px) {
+  padding-bottom: 30px;
+}
+    }
+
+  
   .svg-social{
     width: 20px;
   }
