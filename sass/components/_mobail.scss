@@ -155,12 +155,17 @@
 
 
     &-item{
-        @media screen and (max-width:480px) {
-            padding-bottom: 30px;
+          
+            @media screen and (min-width: 768px) {
+              width: 354px;
+              height: 224px;
+               
+           }
+          }
 
-            }
+        
 
-      &-.container{
+      &-wrapper .container{
         padding-bottom: 10px;
 
         @media screen and (min-width:480px) {
@@ -172,29 +177,30 @@
               width: 270px;
                min-height: 74px;
                max-height: 76px;
-               
            }
            @media screen and (min-width: 1200px) {
                min-height: 70px;
                max-height: 98px;
            }
-       
+    
         }
-    }
+    
     &-list{
         @media screen and (min-width:480px) {
         padding-bottom: 30px;
 
         }
         
-        @media screen and (min-width: 768px) {
+        @media screen and (max-width: 768px) {
             display: flex;
+            flex-wrap: wrap;
             padding-bottom: 60px;
-            column-gap: 30px;
+            gap: 30px;
         }
         @media screen and (min-width: 1200px) {
         padding-bottom: 94px;
-        
+        display: flex;
+        column-gap: 30px;
         }
 
      }
@@ -264,8 +270,6 @@
         }
         
         @media screen and (min-width: 768px) {
-            display: flex;
-            flex-wrap: wrap;
             width: 354px;
             height: 120px;
            
@@ -274,13 +278,22 @@
             width: 270px;
         
         }
+    
         & svg{
-@media screen and (min-width:480px) {
+        @media screen and (min-width:480px) {
         width: 100%;
         }
+        @media screen and (min-width: 768px) {
+          width: 354px;
+          height: 120px;
+         
+      }
+      @media screen and (min-width: 1200px) {
+          width: 270px;
+      
         }
-
     }
+  }
     .desc-wrapper .container{
       width: 1170px;
       height: 386px;
@@ -349,7 +362,6 @@
             padding-bottom: 50px;
         
         }
-
    }
    &-title{
     font-family: 'Roboto', sans-serif;
@@ -369,14 +381,12 @@
       @media screen and (min-width: 768px) {
         display: flex;
         flex-wrap: wrap;
-        
-        column-gap: 30px;
+        gap: 30px;
       }
       @media screen and (min-width: 1200px) {
         display: flex;
         column-gap: 30px;
       }
-
 
    }
    &-item{
@@ -449,7 +459,7 @@
     
     width: 450px;
     height: 460px;}
-  @media screen and (min-width:480px) {
+  @media screen and (min-width:768px) {
    width: 354px;
    height: 374px;
 }
