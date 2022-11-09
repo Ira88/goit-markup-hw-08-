@@ -100,6 +100,11 @@
             text-align: center;
         }
       }
+      &-reviews{
+        @media screen and (max-width: 1199px) {
+         display: none;
+        }
+      }
     }
     .about-item-item{
       position: relative;
@@ -149,10 +154,10 @@
       }
       @media screen and (min-width: 1200px) {
           width: 270px;
-      
         }
     }
   }
+
     .desc-wrapper .container{
       width: 1170px;
       height: 386px;
