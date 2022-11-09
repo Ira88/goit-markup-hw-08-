@@ -71,9 +71,11 @@
       }
       &.active{
         position: relative;
+        color:  #2196F3;
       }
       &.action{
         position: relative;
+        color:  #2196F3;
       }
       }
   }
@@ -124,6 +126,7 @@
   background-color: #2196F3;
   border-radius: 2px;
   bottom: 0;
+ 
  } 
  
 .klik::after{

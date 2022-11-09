@@ -194,9 +194,11 @@ h1, h2, h3, h4, h5, h6, p, ul {
 }
 .navigation_link-current.active {
   position: relative;
+  color: #2196F3;
 }
 .navigation_link-current.action {
   position: relative;
+  color: #2196F3;
 }
 
 .flex-container {
