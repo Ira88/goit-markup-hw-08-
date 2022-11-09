@@ -300,12 +300,6 @@ h1, h2, h3, h4, h5, h6, p, ul {
     font-size: 24px;
     line-height: 28px;
     letter-spacing: 0.03em;
-    padding: 16px 0;
-  }
-}
-@media screen and (min-width: 768px) {
-  .accent {
-    padding: 26px 0;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -313,7 +307,6 @@ h1, h2, h3, h4, h5, h6, p, ul {
     font-size: 26px;
     line-height: 31px;
     letter-spacing: 0.03em;
-    padding: 24px 0;
   }
 }
 
@@ -1013,351 +1006,356 @@ h1, h2, h3, h4, h5, h6, p, ul {
   padding-bottom: 4px;
 }
 
-/*
- .client{
-   padding-bottom: 94px;
-   padding-top: 94px;
-   max-width: 1600px;
-   margin-left: auto;
-   margin-right: auto;
-   &-container{
-     width: 1170px;
-     height: 184px;
-
-   }
-
- &-titel{
-   font-family: 'Roboto';
- font-style: normal;
- font-weight: 700;
- font-size: 36px;
- line-height: 42px;
- text-align: center;
- letter-spacing: 0.03em;
- color: #212121;
- padding-bottom: 50px;
- }
- &-list{
-   display: flex;
-   gap: 30px;
-   padding-bottom: 94px;
-   fill: #757575;
- }
- &-item{
-   width: 170px;
-   height: 92px;
-   border-radius: 4px;
-   border: 1px solid #AFB1B8;
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   }
- }
- .icon-client{
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   width: 100%;
-   height: 100%;
-   &:hover, &:focus{
-     border: 1px solid #2196F3;
-     transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-     }
-   &:hover svg, &:focus svg{
-       fill: #2196F3;
-       transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-     }
- }
-
- .svg-client{
-   width: 106px;
-   height: 60px;
-   fill: #757575;
- }
- */
-.footer {
-  background-color: #2F303A;
-  margin: auto;
-  padding: 60px;
-  max-width: 1600px;
-}
-.footer-list {
-  margin-top: 20px;
-}
-.footer-contactcs {
-  width: 231px;
-  height: 81px;
-}
-.footer-logo {
-  font-family: "Raleway";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 31px;
-  letter-spacing: 0.03em;
-  color: #FFFFFF;
-  text-decoration: none;
-}
-.footer-adress {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
-  letter-spacing: 0.03em;
-  color: #FFFFFF;
-}
-.footer-item {
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
-  letter-spacing: 0.03em;
-  color: #FFFFFF;
-}
-.footer-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-.footer-social {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: #FFFFFF;
-  margin-bottom: 20px;
-}
-.footer-social {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-column-gap: 10px;
-     -moz-column-gap: 10px;
-          column-gap: 10px;
-}
-.footer-social-footer {
-  width: 206px;
-  height: 80px;
-  margin-left: 70px;
-}
-.footer-social-item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-column-gap: 10px;
-     -moz-column-gap: 10px;
-          column-gap: 10px;
-  width: 44px;
-  height: 44px;
-}
-.footer-form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-column-gap: 12px;
-     -moz-column-gap: 12px;
-          column-gap: 12px;
-}
-.footer-form input {
-  border: none;
-  background: none;
-  height: 40px;
-  border-radius: 4px;
-  padding-left: 12px;
-  cursor: pointer;
-  outline: none;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-          filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-  border-radius: 4px;
-  width: 358px;
-  height: 50px;
-}
-.footer-btn {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 30px;
-  background-color: #2196F3;
-  letter-spacing: 0.06em;
-  color: #FFFFFF;
-  border-radius: 4px;
-  width: 200px;
-  height: 50px;
-  border: none;
-  padding: 10px 28px;
-  text-align: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.logo-container {
-  width: 145px;
-  height: 31px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.current-footer {
-  color: #fff;
-  text-decoration: none;
-  padding-top: 9px;
-}
-.current-footer:hover, .current-footer:focus {
-  color: #2196F3;
-  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.svg-social {
-  width: 20px;
-}
-
-.footer-social-link {
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  background: rgba(255, 255, 255, 0.1);
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  fill: #fff;
-}
-.footer-social-link:hover, .footer-social-link:focus {
-  background-color: #2196F3;
-  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.booking {
-  width: 570px;
-  height: 86px;
+.client {
   margin-left: auto;
+  margin-right: auto;
 }
-.booking-text {
+@media screen and (min-width: 480px) {
+  .client {
+    padding-bottom: 60px;
+    padding-top: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .client {
+    padding-bottom: 94px;
+    padding-top: 94px;
+    max-width: 1600px;
+  }
+}
+@media screen and (min-width: 480px) {
+  .client-container {
+    width: 450px;
+    height: 399px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .client-container {
+    width: 738px;
+    height: 277px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .client-container {
+    width: 1170px;
+    height: 184px;
+  }
+}
+.client-titel {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
-  font-size: 14px;
-  line-height: 16px;
+  text-align: center;
   letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: #FFFFFF;
-  margin-bottom: 20px;
+  color: #212121;
+}
+@media screen and (min-width: 480px) {
+  .client-titel {
+    font-size: 28px;
+    line-height: 33px;
+    padding-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .client-titel {
+    font-size: 36px;
+    line-height: 42px;
+    padding-bottom: 50px;
+  }
+}
+.client-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+  fill: #757575;
+}
+@media screen and (min-width: 480px) {
+  .client-list {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 450px;
+    height: 399px;
+    padding-bottom: 60px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .client-list {
+    width: 738px;
+    height: 277px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .client-list {
+    padding-bottom: 94px;
+    width: 1170px;
+    height: 184px;
+  }
+}
+.client-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 92px;
+  border-radius: 4px;
+  border: 1px solid #AFB1B8;
+}
+@media screen and (min-width: 480px) {
+  .client-item {
+    width: 210px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .client-item {
+    width: 226px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .client-item {
+    width: 170px;
+  }
 }
 
-.svg-booking {
-  width: 24px;
-  height: 24px;
-  margin-left: 10px;
-}
-
-.text-mail input {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
-  color: rgba(255, 255, 255, 0.6);
-}
-.text-mail input :focus {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
+.icon-client {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
-  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+.icon-client:hover, .icon-client:focus {
+  border: 1px solid #2196F3;
+  -webkit-transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.icon-client:hover svg, .icon-client:focus svg {
+  fill: #2196F3;
+  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.text-mail ::-webkit-input-placeholder {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
+.svg-client {
+  width: 106px;
+  height: 60px;
+  fill: #757575;
 }
 
-.text-mail ::-moz-placeholder {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
-}
+/*.footer{
+    background-color: #2F303A;
+    margin: auto;
+    padding: 60px;
+    max-width: 1600px;
 
-.text-mail :-ms-input-placeholder {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
-}
+    &-list{
+        margin-top: 20px;
+      }
+      &-contactcs{
+        width: 231px;
+        height: 81px;
+      }
+      &-logo{
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 31px;
+        letter-spacing: 0.03em;
+        color: #FFFFFF;
+        text-decoration: none;
+      }
 
-.text-mail ::-ms-input-placeholder {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
-}
+      &-adress{
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: 0.03em;
+        color: #FFFFFF;
+        }
+      &-item {
+        font-family: 'Roboto', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: 0.03em;
+        color: #FFFFFF;
+      }
+      &-wrapper{
+        display: flex;
+      }
+      &-social{
+        font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 16px;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      color: #FFFFFF;
+      margin-bottom: 20px;
+      }
+      &-social{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        column-gap: 10px;
 
-.text-mail ::placeholder {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
-}
+        &-footer{
+            width: 206px;
+            height: 80px;
+           margin-left: 70px;
+          } 
+          &-item{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            column-gap: 10px;
+            width: 44px;
+            height: 44px;
+          }
+      }
+      &-form{
+        display: flex;
+        column-gap: 12px;
 
+        & input{
+            border: none;
+            background: none;
+            height: 40px;
+            border-radius: 4px;
+            padding-left: 12px;
+            cursor: pointer;
+            outline: none;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+            border-radius: 4px;
+            width:358px;
+            height: 50px;
+          }
+      }
+      &-btn{
+        font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 30px;
+      background-color: #2196F3;
+      letter-spacing: 0.06em;
+      color: #FFFFFF;
+      border-radius: 4px;
+      width: 200px;
+      height: 50px;
+      border: none;
+      padding: 10px 28px;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      }
+  }
+
+  .logo-container{
+    width: 145px;
+    height: 31px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .current-footer{
+    color: #fff;
+    text-decoration: none;
+    padding-top: 9px;
+
+    &:hover,
+    &:focus{
+        color: #2196F3;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      } 
+  }
+
+  .svg-social{
+    width: 20px;
+  }
+
+  .footer-social-link{
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    fill: #fff;
+
+    &:hover,
+    &:focus{
+      background-color: #2196F3;
+      transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+  }
+
+  .booking{
+    width: 570px;
+    height: 86px;
+    margin-left: auto;
+
+    &-text{
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        margin-bottom: 20px;
+      } 
+  }
+
+  .svg-booking{
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+  }
+  .text-mail input{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: rgba(255, 255, 255, 0.6);
+
+    & :focus{
+        font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 20px;
+      display: flex;
+      align-items: center;
+      letter-spacing: 0.03em;
+      color: rgba(255, 255, 255, 0.6);
+       transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      }
+  }
+
+  .text-mail ::placeholder{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+  }
+  */
 .backdrop {
   position: fixed;
   width: 100%;
@@ -2042,117 +2040,74 @@ h1, h2, h3, h4, h5, h6, p, ul {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.client {
-  margin-left: auto;
-  margin-right: auto;
+.footer {
+  background-color: #2F303A;
+  margin: auto;
 }
 @media screen and (min-width: 480px) {
-  .client {
-    padding-bottom: 60px;
+  .footer {
+    width: 480px;
+    height: 603px;
     padding-top: 60px;
   }
 }
-@media screen and (min-width: 1200px) {
-  .client {
-    padding-bottom: 94px;
-    padding-top: 94px;
-    max-width: 1600px;
+@media screen and (min-width: 768px) {
+  .footer {
+    width: 768px;
+    height: 463px;
   }
+}
+@media screen and (min-width: 1200px) {
+  .footer {
+    width: 1600px;
+    height: 252px;
+    padding: 60px;
+  }
+}
+.footer-list {
+  margin-top: 20px;
 }
 @media screen and (min-width: 480px) {
-  .client-container {
-    width: 450px;
-    height: 399px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .client-container {
-    width: 738px;
-    height: 277px;
+  .footer-contactcs {
+    width: 323px;
+    height: 79px;
   }
 }
 @media screen and (min-width: 1200px) {
-  .client-container {
-    width: 1170px;
-    height: 184px;
+  .footer-contactcs {
+    width: 231px;
+    height: 81px;
   }
 }
-.client-titel {
-  font-family: "Roboto";
+.footer-logo {
+  font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 700;
-  text-align: center;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+@media screen and (min-width: 480px) {
+  .footer-logo {
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.03em;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-logo {
+    font-size: 26px;
+    line-height: 31px;
+    letter-spacing: 0.03em;
+  }
+}
+.footer-adress {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
   letter-spacing: 0.03em;
-  color: #212121;
-}
-@media screen and (min-width: 480px) {
-  .client-titel {
-    font-size: 28px;
-    line-height: 33px;
-    padding-bottom: 30px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .client-titel {
-    font-size: 36px;
-    line-height: 42px;
-    padding-bottom: 50px;
-  }
-}
-.client-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 30px;
-  fill: #757575;
-}
-@media screen and (min-width: 480px) {
-  .client-list {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    width: 450px;
-    height: 399px;
-    padding-bottom: 60px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .client-list {
-    width: 738px;
-    height: 277px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .client-list {
-    padding-bottom: 94px;
-    width: 1170px;
-    height: 184px;
-  }
-}
-.client-item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  height: 92px;
-  border-radius: 4px;
-  border: 1px solid #AFB1B8;
-}
-@media screen and (min-width: 480px) {
-  .client-item {
-    width: 210px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .client-item {
-    width: 226px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .client-item {
-    width: 170px;
-  }
-}
-
-.icon-client {
+  color: #FFFFFF;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2162,22 +2117,365 @@ h1, h2, h3, h4, h5, h6, p, ul {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 100%;
-  height: 100%;
 }
-.icon-client:hover, .icon-client:focus {
-  border: 1px solid #2196F3;
-  -webkit-transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+@media screen and (min-width: 480px) {
+  .footer-adress {
+    margin: auto;
+    width: 232px;
+    height: 79px;
+  }
 }
-.icon-client:hover svg, .icon-client:focus svg {
-  fill: #2196F3;
-  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+@media screen and (min-width: 768px) {
+  .footer-adress {
+    margin-left: 76px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-adress {
+    margin: 0;
+    height: 81px;
+  }
+}
+.footer-item {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: #FFFFFF;
+}
+@media screen and (min-width: 768px) {
+  .footer-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+.footer-social {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin-bottom: 20px;
+}
+.footer-social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-column-gap: 10px;
+     -moz-column-gap: 10px;
+          column-gap: 10px;
+}
+.footer-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 12px;
+     -moz-column-gap: 12px;
+          column-gap: 12px;
+}
+.footer-form input {
+  border: none;
+  background: none;
+  height: 40px;
+  border-radius: 4px;
+  padding-left: 12px;
+  cursor: pointer;
+  outline: none;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+          filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  width: 358px;
+  height: 50px;
+}
+.footer-btn {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  background-color: #2196F3;
+  letter-spacing: 0.06em;
+  color: #FFFFFF;
+  border-radius: 4px;
+  width: 200px;
+  height: 50px;
+  border: none;
+  padding: 10px 28px;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.svg-client {
-  width: 106px;
-  height: 60px;
-  fill: #757575;
+@media screen and (min-width: 480px) {
+  .social-footer {
+    margin-top: 60px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .social-footer {
+    margin-right: auto;
+    margin-top: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .social-footer {
+    margin-left: 70px;
+  }
+}
+.social-footer-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-column-gap: 10px;
+     -moz-column-gap: 10px;
+          column-gap: 10px;
+  width: 44px;
+  height: 44px;
+}
+
+.logo-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+@media screen and (min-width: 480px) {
+  .logo-container {
+    margin: auto;
+    width: 154px;
+    height: 28px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .logo-container {
+    margin-left: 115px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .logo-container {
+    margin: 0;
+    width: 145px;
+    height: 31px;
+  }
+}
+
+.footer-accent {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  color: #2196F3;
+}
+@media screen and (min-width: 480px) {
+  .footer-accent {
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.03em;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-accent {
+    font-size: 26px;
+    line-height: 31px;
+    letter-spacing: 0.03em;
+  }
+}
+
+.current-footer {
+  color: #fff;
+  text-decoration: none;
+}
+.current-footer-contact {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+  padding-top: 9px;
+}
+.current-footer-contact:hover, .current-footer-contact:focus {
+  color: #2196F3;
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.current-footer:hover, .current-footer:focus {
+  color: #2196F3;
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.svg-social {
+  width: 20px;
+}
+
+.footer-social-link {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  fill: #fff;
+}
+.footer-social-link:hover, .footer-social-link:focus {
+  background-color: #2196F3;
+  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: 480px) {
+  .booking {
+    width: 154px;
+    height: 28px;
+    margin-top: 60px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .booking {
+    width: 450px;
+    height: 156px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .booking {
+    width: 570px;
+    height: 86px;
+    margin-left: auto;
+    margin-top: 0;
+  }
+}
+.booking-text {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 1199px) {
+  .booking-text {
+    text-align: center;
+  }
+}
+
+.svg-booking {
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+}
+
+.text-mail input {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: rgba(255, 255, 255, 0.6);
+}
+.text-mail input :focus {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.text-mail ::-webkit-input-placeholder {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.text-mail ::-moz-placeholder {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.text-mail :-ms-input-placeholder {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.text-mail ::-ms-input-placeholder {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.text-mail ::placeholder {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
 }/*# sourceMappingURL=main.css.map */
