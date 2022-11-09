@@ -2074,10 +2074,11 @@ h1, h2, h3, h4, h5, h6, p, ul {
 .footer-list {
   margin-top: 20px;
 }
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 1199px) {
   .footer-contactcs {
     width: 323px;
     height: 79px;
+    text-align: center;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -2189,13 +2190,15 @@ h1, h2, h3, h4, h5, h6, p, ul {
      -moz-column-gap: 10px;
           column-gap: 10px;
 }
-.footer-form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-column-gap: 12px;
-     -moz-column-gap: 12px;
-          column-gap: 12px;
+@media screen and (min-width: 1200px) {
+  .footer-form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-column-gap: 12px;
+       -moz-column-gap: 12px;
+            column-gap: 12px;
+  }
 }
 .footer-form input {
   border: none;
@@ -2209,8 +2212,18 @@ h1, h2, h3, h4, h5, h6, p, ul {
   -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
           filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
-  width: 358px;
-  height: 50px;
+}
+@media screen and (min-width: 480px) {
+  .footer-form input {
+    width: 450px;
+    height: 50px;
+    margin-bottom: 20px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-form input {
+    width: 358px;
+  }
 }
 .footer-btn {
   font-family: "Roboto";
@@ -2234,7 +2247,6 @@ h1, h2, h3, h4, h5, h6, p, ul {
       -ms-flex-pack: center;
           justify-content: center;
 }
-
 @media screen and (min-width: 480px) {
   .social-footer {
     margin-top: 60px;
