@@ -225,9 +225,21 @@ h1, h2, h3, h4, h5, h6, p, ul {
 }
 
 .contakt-current {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
   color: #757575;
   text-decoration: none;
   padding: 32px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .contakt-current:hover, .contakt-current:focus {
   color: #2196F3;
@@ -2247,6 +2259,7 @@ h1, h2, h3, h4, h5, h6, p, ul {
       -ms-flex-pack: center;
           justify-content: center;
 }
+
 @media screen and (min-width: 480px) {
   .social-footer {
     margin-top: 60px;
