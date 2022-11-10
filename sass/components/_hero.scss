@@ -120,8 +120,8 @@ padding: 10px 24px;
 
   .port_list{
     display: flex;
+    justify-content: center;
   column-gap: 8px;
-  margin-left: 400px;
   padding-top: 94px;
   
   &_btn{
