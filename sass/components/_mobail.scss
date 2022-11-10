@@ -161,18 +161,7 @@
     &-list{
         margin-top: 20px;
       }
-      &-contactcs{
-        @media screen and (max-width:1199px) {
-          width: 323px;
-          height: 79px;
-          text-align: center;
-         }
-      
-         @media screen and (min-width: 1200px) {
-          width: 231px;
-          height: 81px;
-       }
-      }
+    
       &-logo{
         font-family: 'Raleway', sans-serif;
         font-style: normal;
@@ -234,6 +223,7 @@
           display: flex;
           flex-wrap: wrap;
           justify-content: center;
+          align-items: baseline;
     }
         @media screen and (min-width:1200px) {
    

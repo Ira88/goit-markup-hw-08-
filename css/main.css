@@ -1159,8 +1159,8 @@ h1, h2, h3, h4, h5, h6, p, ul {
 }
 
 .svg-client {
-  width: 106px;
-  height: 60px;
+  width: 100%;
+  height: 100%;
   fill: #AFB1B8;
 }
 
@@ -1855,19 +1855,6 @@ h1, h2, h3, h4, h5, h6, p, ul {
 .footer-list {
   margin-top: 20px;
 }
-@media screen and (max-width: 1199px) {
-  .footer-contactcs {
-    width: 323px;
-    height: 79px;
-    text-align: center;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .footer-contactcs {
-    width: 231px;
-    height: 81px;
-  }
-}
 .footer-logo {
   font-family: "Raleway", sans-serif;
   font-style: normal;
@@ -1944,6 +1931,9 @@ h1, h2, h3, h4, h5, h6, p, ul {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
   }
 }
 .footer-social {
