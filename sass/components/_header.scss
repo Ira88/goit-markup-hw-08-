@@ -28,14 +28,14 @@
   align-items: center;
   column-gap: 93px;
 
-  &_list{
+  &__list{
     margin: 0;
     display: flex;
     align-items: center;
     column-gap: 50px;
     width: 286px;
   }
-  &_item{
+  &__item{
     font-family: 'Roboto';
   font-style: normal;
   font-weight: 500;
@@ -45,7 +45,7 @@
   color: #212121;
   }
   
-  &_link {
+  &__link {
     font-family:"Roboto", sans-serif;
     font-style: normal;
     font-weight: 700;

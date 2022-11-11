@@ -16,6 +16,9 @@
     }
 
     &-contacts{
+      @media screen and (max-width: 767px) {
+        display: none;
+        }
         @media screen and (min-width: 768px) {
         display: block;
         }
@@ -38,8 +41,7 @@
       }
 }  
 .navigation{
-    
-
+ 
     @media screen and (min-width: 768px) {
         display: flex;
         align-items: center;
@@ -51,14 +53,19 @@
     }
 
   
-    &_list{
+    &__list{
       margin: 0;
       display: flex;
       align-items: center;
       column-gap: 50px;
       width: 282px;
+
+      @media screen and (max-width: 767px) {
+        display: none;
+        
     }
-    &_item{
+    }
+    &__item{
       font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
@@ -136,6 +143,30 @@
         height: 80px;
     }
    
+}
+
+.menu-batton{
+  @media screen and (max-width: 767px) {
+    display: inline-flex;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+  
+    &.icon-close{
+      display: none;
+  
+      &.is-open{
+        display: block;
+      }
+    }
+    &.is-open .icon-menu{
+      display: none;
+    }
+}
+@media screen and (min-width: 768px) {
+ display: none;
+}
 }
 
 

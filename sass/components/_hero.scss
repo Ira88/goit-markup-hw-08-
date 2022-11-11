@@ -3,26 +3,55 @@
   background-color: #2F303A;
 padding: 0;
 margin: auto;
-background-image: linear-gradient(
- rgba(47, 48, 58, 0.4),
- rgba(47, 48, 58, 0.4)),
-url(../imeges/fon.png);
-
 
 @media screen and (min-width:480px) {
   width: 480px;
   height: 400px;
+  background-image: linear-gradient(
+ rgba(47, 48, 58, 0.4),
+ rgba(47, 48, 58, 0.4)),
+url(../imeges/hero/fon-mobile-1x.png);
+
+@include retina{
+  background-image: linear-gradient(
+ rgba(47, 48, 58, 0.4),
+ rgba(47, 48, 58, 0.4)),
+url(../imeges/hero/fon-mobile-2x.png);
+}
 }
 
 @media screen and (min-width: 768px) {
   width: 768px;
+  background-image: linear-gradient(
+ rgba(47, 48, 58, 0.4),
+ rgba(47, 48, 58, 0.4)),
+url(../imeges/hero/fon-tab-1x.png);
+
+@include retina{
+  background-image: linear-gradient(
+    rgba(47, 48, 58, 0.4),
+    rgba(47, 48, 58, 0.4)),
+   url(../imeges/hero/fon-tab-2x.png);
+}
 }
 @media screen and (min-width: 1200px) {
   width: 1600px;
   height: 600px;
+  background-image: linear-gradient(
+ rgba(47, 48, 58, 0.4),
+ rgba(47, 48, 58, 0.4)),
+url(../imeges/hero/fon-1x.png);
   background-repeat: no-repeat;
 background-position: center;
 background-size: cover;
+
+@include retina{
+  background-image: linear-gradient(
+ rgba(47, 48, 58, 0.4),
+ rgba(47, 48, 58, 0.4)),
+url(../imeges/hero/fon-2x.png);
+}
+
 }
 
 & .container{
@@ -40,7 +69,7 @@ padding: 118px 0;
 
 
 }
-&_title{
+&__title{
   font-family: 'Roboto', sans-serif;
 font-style: normal;
 font-weight: 900;
@@ -64,7 +93,7 @@ letter-spacing: 0.06em;
 
 }
 
-&_btn{
+&__btn{
 
 display: flex;
 text-align: center;
@@ -84,7 +113,7 @@ padding: 10px 24px;
 }
 
 }
-&_link-current{
+&__link-current{
   color: #fff;
   font-family: 'Roboto';
 font-style: normal;
@@ -118,7 +147,7 @@ padding: 10px 24px;
 }
 
 
-  .port_list{
+  .port__list{
     display: flex;
     justify-content: center;
   column-gap: 8px;
@@ -130,7 +159,7 @@ padding: 10px 24px;
   }
   }
  
-  .port_link-current{
+  .port__link-current{
     color: #212121;
     font-family: 'Roboto', sans-serif;
     font-style: normal;
