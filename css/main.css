@@ -116,11 +116,13 @@ h1, h2, h3, h4, h5, h6, p, ul {
 @media screen and (min-width: 480px) {
   .header {
     height: 60px;
+    width: 480px;
   }
 }
 @media screen and (min-width: 768px) {
   .header {
     height: 80px;
+    width: 768px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -221,16 +223,6 @@ h1, h2, h3, h4, h5, h6, p, ul {
   text-decoration: none;
   color: #212121;
 }
-.navigation__link {
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 16px;
-  text-decoration: none;
-  letter-spacing: 0.03em;
-  color: var(--secondary-text-color);
-}
 .navigation__link-current {
   color: #212121;
   text-decoration: none;
@@ -277,18 +269,34 @@ h1, h2, h3, h4, h5, h6, p, ul {
   }
 }
 
-.icon-smartphone {
-  width: 10px;
-  height: 16px;
-  fill: #757575;
-  margin-right: 10px;
+@media screen and (min-width: 768px) {
+  .icon-smartphone {
+    width: 10px;
+    height: 14px;
+    fill: #757575;
+    margin-right: 10px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .icon-smartphone {
+    width: 10px;
+    height: 16px;
+  }
 }
 
-.icon-envelope {
-  width: 16px;
-  height: 12px;
-  fill: #757575;
-  margin-right: 10px;
+@media screen and (min-width: 768px) {
+  .icon-envelope {
+    width: 14px;
+    height: 10px;
+    fill: #757575;
+    margin-right: 10px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .icon-envelope {
+    width: 16px;
+    height: 12px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -407,6 +415,9 @@ h1, h2, h3, h4, h5, h6, p, ul {
   background-color: #2F303A;
   padding: 0;
   margin: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 @media screen and (min-width: 480px) {
   .hero {
@@ -427,7 +438,7 @@ h1, h2, h3, h4, h5, h6, p, ul {
     width: 768px;
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../imeges/hero/fon-tab-1x.png);
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../imeges/hero/fon-tab-1x.png);
-    /*@include retina{
+    /*@include retina (){
       background-image: linear-gradient(
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)),
@@ -441,9 +452,6 @@ h1, h2, h3, h4, h5, h6, p, ul {
     height: 600px;
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../imeges/hero/fon-1x.png);
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../imeges/hero/fon-1x.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
     /*@include retina{
       background-image: linear-gradient(
      rgba(47, 48, 58, 0.4),
@@ -474,14 +482,15 @@ h1, h2, h3, h4, h5, h6, p, ul {
   font-weight: 900;
   color: #FFFFFF;
   text-align: center;
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 30px;
   letter-spacing: 0.06em;
 }
 @media screen and (min-width: 480px) {
   .hero__title {
     font-size: 26px;
-    line-height: 42px;
+    line-height: 1.62;
     max-width: 360px;
   }
 }
@@ -2183,11 +2192,10 @@ h1, h2, h3, h4, h5, h6, p, ul {
   color: rgba(255, 255, 255, 0.6);
 }
 
-/*@mixin retina {
+/*@mixin retina() {
     @media (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
-       @content;
-    }
-}
-*//*# sourceMappingURL=main.css.map */
+    @content
+  }
+}*//*# sourceMappingURL=main.css.map */
