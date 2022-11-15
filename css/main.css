@@ -1892,6 +1892,7 @@ h1, h2, h3, h4, h5, h6, p, ul {
       -ms-flex-pack: center;
           justify-content: center;
   font-family: "Roboto";
+  position: relative;
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
@@ -1899,6 +1900,19 @@ h1, h2, h3, h4, h5, h6, p, ul {
   letter-spacing: 0.02em;
   color: #2196F3;
   height: 22px;
+}
+
+.mobile-menu__social ::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 0;
+  border-radius: 2px;
+  bottom: 0;
+  top: 0;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  -webkit-transform: rotateY("90deg");
+          transform: rotateY("90deg");
 }
 
 .footer {
