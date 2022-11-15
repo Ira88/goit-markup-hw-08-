@@ -1502,31 +1502,46 @@ h1, h2, h3, h4, h5, h6, p, ul {
   pointer-events: none;
 }
 
-.modal {
-  padding: 40px;
-  width: 528px;
-  height: 581px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  background: #fff;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+@media screen and (min-width: 480px) {
+  .modal {
+    padding: 40px;
+    width: 450px;
+    height: 609px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background: #fff;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }
-.modal-titel {
-  font-family: "Roboto";
-  font-style: normal;
-  text-align: center;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 23px;
-  letter-spacing: 0.03em;
-  color: #212121;
-  margin-bottom: 12px;
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    height: 581px;
+  }
+}
+@media screen and (min-width: 480px) {
+  .modal-titel {
+    font-family: "Roboto";
+    font-style: normal;
+    text-align: center;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.5;
+    letter-spacing: 0.03em;
+    color: #212121;
+    margin-bottom: 12px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal-titel {
+    line-height: 1.15;
+  }
 }
 .modal-btn {
   width: 200px;
@@ -1540,7 +1555,8 @@ h1, h2, h3, h4, h5, h6, p, ul {
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   cursor: pointer;
   margin-top: 30px;
-  margin-left: 116px;
+  margin-left: auto;
+  margin-right: auto;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
@@ -1641,16 +1657,24 @@ h1, h2, h3, h4, h5, h6, p, ul {
   fill: #212121;
 }
 
-.coment {
-  width: 448px;
-  height: 120px;
-  outline: none;
-  resize: none;
-  border: none;
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  border-radius: 4px;
-  padding: 12px 16px;
-  cursor: pointer;
+@media screen and (min-width: 480px) {
+  .coment {
+    width: 370px;
+    height: 120px;
+    outline: none;
+    resize: none;
+    border: none;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    padding: 12px 16px;
+    cursor: pointer;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .coment {
+    width: 448px;
+    height: 120px;
+  }
 }
 .coment ::-webkit-input-placeholder {
   font-family: "Roboto";
@@ -1708,16 +1732,24 @@ h1, h2, h3, h4, h5, h6, p, ul {
   color: #757575;
 }
 
-.accent-modal {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
-  letter-spacing: 0.03em;
-  -webkit-text-decoration-line: underline;
-          text-decoration-line: underline;
-  color: #2196F3;
+@media screen and (min-width: 480px) {
+  .accent-modal {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.03em;
+    -webkit-text-decoration-line: underline;
+            text-decoration-line: underline;
+    color: #2196F3;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .accent-modal {
+    font-size: 14px;
+    line-height: 24px;
+  }
 }
 
 .checkbox {
@@ -1748,14 +1780,22 @@ h1, h2, h3, h4, h5, h6, p, ul {
       -ms-flex-pack: center;
           justify-content: center;
 }
-.topic-text {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
-  letter-spacing: 0.03em;
-  color: #757575;
+@media screen and (min-width: 480px) {
+  .topic-text {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    color: #757575;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .topic-text {
+    font-size: 14px;
+    line-height: 1.7;
+  }
 }
 .topic input:checked + .checkbox {
   background-color: #2196F3;
@@ -1799,15 +1839,20 @@ h1, h2, h3, h4, h5, h6, p, ul {
 }
 
 .menu-toggle {
-  width: 40px;
-  height: 40px;
+  min-width: 40px;
+  min-height: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   background-color: transparent;
+  padding: 0;
+  margin: 0;
   cursor: pointer;
   border: none;
   outline: none;
@@ -1826,7 +1871,7 @@ h1, h2, h3, h4, h5, h6, p, ul {
 
 .mobile-menu__list {
   padding-left: 40px;
-  padding-bottom: 302px;
+  margin-bottom: 175px;
 }
 
 .mobile-menu__item {
@@ -1869,6 +1914,10 @@ h1, h2, h3, h4, h5, h6, p, ul {
   text-decoration: none;
 }
 
+.menu__contact {
+  padding-top: 32px;
+}
+
 .current-mobile-menu__contact {
   font-family: "Roboto";
   font-style: normal;
@@ -1881,6 +1930,14 @@ h1, h2, h3, h4, h5, h6, p, ul {
 }
 
 .mobile-menu__social {
+  font-family: "Roboto";
+  position: relative;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #2196F3;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1891,26 +1948,18 @@ h1, h2, h3, h4, h5, h6, p, ul {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  font-family: "Roboto";
-  position: relative;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-  color: #2196F3;
-  height: 22px;
+  margin-top: 64px;
 }
 
-.mobile-menu__social ::after {
-  content: "";
+.menu__social :not(:last-child)::after {
   position: absolute;
+  content: "";
   display: block;
-  width: 0;
+  width: 2;
   border-radius: 2px;
   bottom: 0;
   top: 0;
-  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
   -webkit-transform: rotateY("90deg");
           transform: rotateY("90deg");
 }

@@ -12,14 +12,18 @@
 &.is-open {
   transform: translateX(0);
 }
+
 }
 
 .menu-toggle{
-  width: 40px;
-  height: 40px;
+  min-width: 40px;
+  min-height: 40px;
 display: flex;
 align-items: center;
+justify-content: center;
 background-color: transparent;
+padding: 0;
+margin: 0;
 cursor: pointer;
 border: none;
 outline: none;
@@ -36,7 +40,7 @@ margin-left: auto;
 
 .mobile-menu__list {
  padding-left: 40px;
- padding-bottom: 302px;
+ margin-bottom: 175px;
 }
 .mobile-menu__item{
 font-family: 'Roboto';
@@ -64,8 +68,6 @@ padding-bottom: 32px;
 }
 .mobile-menu__contact {
   padding-left: 40px;
-
-
  }
 .current-mobile-menu__contacts{
   font-family: 'Roboto';
@@ -76,6 +78,10 @@ line-height: 1.2;
 letter-spacing: 0.02em;
 color: #2196F3;
 text-decoration: none;
+
+}
+.menu__contact {
+  padding-top: 32px;
 }
 
 .current-mobile-menu__contact{
@@ -90,10 +96,6 @@ text-decoration: none;
 }
 
 .mobile-menu__social{
-  display: flex;
-  column-gap: 20px;
-  text-decoration: none;
-  justify-content: center;
   font-family: 'Roboto';
 position: relative;
 font-style: normal;
@@ -102,19 +104,24 @@ font-size: 18px;
 line-height: 1.2;
 letter-spacing: 0.02em;
 color: #2196F3;
-height: 22px;
+display: flex;
+column-gap: 20px;
+text-decoration: none;
+justify-content: center;
+margin-top: 64px;
 }
-.mobile-menu__social ::after {
-  content:"";
+
+.menu__social :not(:last-child)::after{
 position: absolute;
+content: "";
 display: block;
-width: 0;
+width: 2;
 border-radius: 2px;
 bottom: 0;
 top: 0;
-  border: 1px solid rgba(33, 33, 33, 0.2);
-
+border-right: 1px solid rgba(33, 33, 33, 0.2);
 transform: rotateY('90deg');
+
 }
 
 
