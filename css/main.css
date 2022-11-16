@@ -1574,8 +1574,8 @@ h1, h2, h3, h4, h5, h6, p, ul {
 
 @media screen and (min-width: 480px) {
   .booking {
-    width: 154px;
-    height: 28px;
+    width: 450px;
+    height: 156px;
     margin-top: 60px;
   }
 }
@@ -2073,7 +2073,7 @@ h1, h2, h3, h4, h5, h6, p, ul {
 
 .mobile-menu__list {
   padding-left: 40px;
-  margin-bottom: 175px;
+  margin-bottom: 202px;
 }
 
 .mobile-menu__item {
@@ -2118,6 +2118,11 @@ h1, h2, h3, h4, h5, h6, p, ul {
   color: #2196F3;
   text-decoration: none;
 }
+@media screen and (max-width: 450px) {
+  .current-mobile-menu__contacts {
+    font-size: 28px;
+  }
+}
 
 .menu__contact {
   padding-top: 32px;
@@ -2152,19 +2157,32 @@ h1, h2, h3, h4, h5, h6, p, ul {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-top: 64px;
+}
+@media screen and (max-width: 450px) {
+  .mobile-menu__social {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 15px;
+  }
 }
 
-.menu__social :not(last-child) {
+.menu__social {
   display: block;
-  width: 22;
   border-radius: 2px;
   bottom: 0;
   top: 0;
   border-right: 1px solid rgba(33, 33, 33, 0.2);
-  -webkit-transform: rotateY("90deg");
-          transform: rotateY("90deg");
   padding-right: 15px;
+  margin-top: 64px;
+}
+@media screen and (max-width: 450px) {
+  .menu__social {
+    margin-top: 32px;
+  }
+}
+
+.no-border {
+  border-right: none;
 }
 
 /*@mixin retina() {
