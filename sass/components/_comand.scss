@@ -1,55 +1,42 @@
 .comand{
   background-color: #F5F4FA;
-  padding: 0;
   margin: auto;
       @media screen and (min-width:480px) {
-
+     padding: 60px 0;
       height: 2761px;
       }
       
       @media screen and (min-width: 768px) {
-
       height: 1285px;
       }
       @media screen and (min-width: 1200px) {
-
+        padding: 94px 0;
           height: 708px;
-
       }
-
-  &-container{
-
-          @media screen and (min-width:480px) {
-          padding-bottom: 60px;
-          }
-          
-          @media screen and (min-width: 1200px) {
-              width: 1170px;
-              height: 428px;
-              padding-bottom: 94px;
-          }
-  }
  &-title{
      text-align: center;
       @media screen and (min-width:480px) {
-          padding-top: 60px;
-          padding-bottom: 30px;
+          margin-bottom: 30px;
       }
-
       @media screen and (min-width: 1200px) {
-          padding-top: 94px;
-          padding-bottom: 50px;
+        margin-bottom: 50px;
       
       }
  }
  &-title{
-  font-family: 'Roboto', sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 42px;
-  letter-spacing: 0.03em;
-    color:  var(--primary-text-color);
+  @media screen and (min-width:480px) {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 33px;
+    letter-spacing: 0.03em;
+    color: #212121;
+     }
+    @media screen and (min-width: 1200px) {
+      font-size: 36px;
+      line-height: 42px;
+    }
  }
  &-list{
   @media screen and (min-width:480px) {
@@ -122,8 +109,10 @@
   }
 }
 }
+.mar{
+  margin-bottom:0;
+}
 .container-item{
-
   text-align: center;
 
   @media screen and (min-width:480px) {

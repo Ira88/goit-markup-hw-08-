@@ -5,13 +5,11 @@
   @media screen and (min-width:480px) {
     padding-bottom: 60px;
     padding-top: 60px;
-
   }
 
   @media screen and (min-width: 1200px) {
     padding-bottom: 94px;
     padding-top: 94px;
- 
 }
 
   &-container{
@@ -39,36 +37,30 @@
   @media screen and (min-width:480px) {
     font-size: 28px;
     line-height: 33px;
-    padding-bottom: 30px;
+    margin-bottom: 30px;
   }
   @media screen and (min-width: 1200px) {
     font-size: 36px;
     line-height: 42px;
-    padding-bottom: 50px;
+    margin-bottom: 50px;
 }
 }
 &-list{
   display: flex;
-
   gap: 30px;
   fill: #757575;
   @media screen and (min-width:480px) {
   flex-wrap: wrap;
   width: 450px;
-  height: 399px;
-  padding-bottom: 60px;
   }
   @media screen and (min-width:768px){
   width: 738px;
-  height: 277px;
+
   }
   @media screen and (min-width: 1200px) {
-    padding-bottom: 94px;
     width: 1170px;
-    height: 184px;
 
 }
-
 }
 &-item{
   display: flex;

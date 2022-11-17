@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WebStudio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;900&family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap" 
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;900&family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" 
     rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
@@ -36,10 +36,10 @@
     <ul class="mobile-menu__list list">
         <li class="mobile-menu__item"><a class="mobile-menu__link-current active" href="index.html" class="mobile-menu__link link">Студія</a></li>
         <li class="mobile-menu__item"><a class="mobile-menu__link-current" href="portfolio.html" class="mobile-menu__link link">Портфоліо</a></li>
-        <li class="mobile-menu__item"><a class="mobile-menu__link-current" href="" class="mobile-menu__link link">Контакти</a></li>
+        <li class="mobile-menu__item no-mar"><a class="mobile-menu__link-current" href="" class="mobile-menu__link link">Контакти</a></li>
     </ul>
     <ul class="mobile-menu__contact list">
-        <li class="menu__contact">
+        <li class="menu__contacts">
             <a class="current-mobile-menu__contacts" href="tel:+380961111111" class="mobile-menu__item link">
                 +38 096 111 11 11</a>
         </li>
@@ -66,7 +66,7 @@
     </div>
         <ul class="header-contacts">
     <li class="header-item list">
-        <a class="contakt-current" href="mailto:info@devstudio.com" target="_blank"
+        <a class="contakt-currents" href="mailto:info@devstudio.com" target="_blank"
         rel="noopener noreferrer nofollow " class="header-contacts link">
         <svg class="contact-icon icon-envelope" 
         viewBox="0 0 43 32">
@@ -156,10 +156,13 @@
             </li>
         </ul>
         </div>
-        <div class="about-reviews">
-        <h2  class="about-title desc-wrapper">Чим ми займаємося</h2>
-        <ul class="about-list list">
-            <li class="about-item-item">
+    </section>
+        <section class="work">
+            <div class="cotainer">
+        <div class="work-reviews">
+        <h2  class="work-title">Чим ми займаємося</h2>
+        <ul class="work-list list">
+            <li class="work-item-item">
                 <img 
                 srcset="./img/box1.jpg 1x,
                         ./img/box1-2x.jpg 2x"
@@ -180,6 +183,7 @@
         </ul>
         </div>
         </div>
+    </div>
     </section>
     <!--Розділ наша команда-->
     <section class="comand">
@@ -194,7 +198,7 @@
                           media="(min-width: 1200px)"
                           srcset="
                           ./img/comand/card1.jpg 1x,
-                          ./img/comand/card1.jpg 2x"
+                          ./img/comand/card1-2x.jpg 2x"
                           type="image/jpg"
                           />
                           <source
@@ -259,7 +263,7 @@
                           media="(min-width: 1200px)"
                           srcset="
                           ./img/comand/card2.jpg 1x,
-                          ./img/comand/card2.jpg 2x"
+                          ./img/comand/card2-2x.jpg 2x"
                           type="image/jpg"
                           />
                           <source
@@ -324,7 +328,7 @@
                           media="(min-width: 1200px)"
                           srcset="
                           ./img/comand/card3.jpg 1x,
-                          ./img/comand/card3.jpg 2x"
+                          ./img/comand/card3-2x.jpg 2x"
                           type="image/jpg"
                           />
                           <source
@@ -382,14 +386,14 @@
                 </ul>
                 </div>
             </li>
-            <li class="comand-item">
+            <li class="comand-item mar">
                 <div class="container-item">
                     <picture>
                         <source
                           media="(min-width: 1200px)"
                           srcset="
                           ./img/comand/card4.jpg 1x,
-                          ./img/comand/card4.jpg 2x"
+                          ./img/comand/card4-2x.jpg 2x"
                           type="image/jpg"
                           />
                           <source
@@ -452,7 +456,8 @@
         </div>
     </section>
         <!--Розділ постійні клієнти-->
-    <section class="container client">
+    <section class="client">
+        <div class="container">
         <div class="client-container">
             <h2 class="client-titel">Постійні клієнти</h2>
             <ul class="client-list list">
@@ -500,6 +505,7 @@
                  </li>
              </ul>
         </div>
+    </div>
     </section>
    </main> 
    
@@ -530,7 +536,7 @@
     </address>
    
     <div class="social-footer">
-        <h3 class="footer-social item">приєднуйтесь</h3>
+        <p class="footer-social item">приєднуйтесь</p>
         <ul class="footer-social list">
             <li class="social-item">
               <a href="" class="footer-social-link">
