@@ -2160,7 +2160,6 @@ h1, h2, h3, h4, h5, h6, p, ul {
 .mobile-menu__list {
   margin-left: 40px;
   margin-top: 48px;
-  margin-bottom: 202px;
 }
 
 .mobile-menu__item {
@@ -2238,23 +2237,30 @@ h1, h2, h3, h4, h5, h6, p, ul {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2196F3;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-column-gap: 20px;
-     -moz-column-gap: 20px;
-          column-gap: 20px;
   text-decoration: none;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-top: 64px;
 }
 @media screen and (max-width: 450px) {
   .mobile-menu__social {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     gap: 15px;
+  }
+}
+.mobile-menu__social-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 20px;
+     -moz-column-gap: 20px;
+          column-gap: 20px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 64px;
+}
+@media screen and (max-width: 450px) {
+  .mobile-menu__social-list {
+    margin-top: 32px;
   }
 }
 
@@ -2265,11 +2271,6 @@ h1, h2, h3, h4, h5, h6, p, ul {
   top: 0;
   border-right: 1px solid rgba(33, 33, 33, 0.2);
   padding-right: 15px;
-}
-@media screen and (max-width: 450px) {
-  .menu__social {
-    margin-top: 32px;
-  }
 }
 
 .no-border {

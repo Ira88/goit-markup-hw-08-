@@ -46,7 +46,7 @@ margin-left: auto;
 .mobile-menu__list {
   margin-left: 40px;
   margin-top: 48px;
-  margin-bottom: 202px;
+
 }
 .mobile-menu__item{
 font-family: 'Roboto';
@@ -118,28 +118,30 @@ font-size: 18px;
 line-height: 1.2;
 letter-spacing: 0.02em;
 color: #2196F3;
-display: flex;
-column-gap: 20px;
 text-decoration: none;
-justify-content: center;
-margin-top: 64px;
+
 @media screen and (max-width:450px) {
   flex-wrap: wrap;
   gap: 15px;
 }
+&-list{
+  display: flex;
+  column-gap: 20px;
+  justify-content: center;
+  margin-top: 64px;
+  @media screen and (max-width:450px) {
+    margin-top: 32px;
+  }
+}
 }
 
 .menu__social{
-display: block;
-border-radius: 2px;
-bottom: 0;
-top: 0;
-border-right: 1px solid rgba(33, 33, 33, 0.2);
-padding-right: 15px;
-
-@media screen and (max-width:450px) {
-  margin-top: 32px;
-}
+  display: block;
+  border-radius: 2px;
+  bottom: 0;
+  top: 0;
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+  padding-right: 15px;
 }
 
 .no-border{
