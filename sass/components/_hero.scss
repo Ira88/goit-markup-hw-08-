@@ -156,18 +156,14 @@ padding: 10px 24px;
       flex-wrap: wrap;
       gap: 8px;
       padding-top: 60px;
-  
       }
       
-      @media screen and (min-width: 1200px) {
+      @media screen and (min-width: 768px) {
         display: flex;
         justify-content: center;
       column-gap: 8px;
       padding-top: 94px;
       }
-
-
-  
   &_btn{
     color:  var(--primary-text-color);
   padding-bottom: 94px;
@@ -183,7 +179,6 @@ padding: 10px 24px;
     line-height: 26px;
 text-align: center;
 letter-spacing: 0.03em;
-
 color: #212121;
    text-decoration: none;
    max-width: 130px;

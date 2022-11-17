@@ -561,7 +561,7 @@ h1, h2, h3, h4, h5, h6, p, ul {
     padding-top: 60px;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .port__list {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1307,6 +1307,11 @@ h1, h2, h3, h4, h5, h6, p, ul {
     height: 252px;
   }
 }
+@media screen and (max-width: 1199px) {
+  .footer-contactcs {
+    text-align: center;
+  }
+}
 .footer-list {
   margin-top: 20px;
 }
@@ -1322,7 +1327,6 @@ h1, h2, h3, h4, h5, h6, p, ul {
     font-size: 24px;
     line-height: 28px;
     letter-spacing: 0.03em;
-    text-align: center;
   }
 }
 @media screen and (min-width: 1200px) {
