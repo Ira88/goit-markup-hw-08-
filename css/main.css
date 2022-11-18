@@ -239,6 +239,10 @@ h1, h2, h3, h4, h5, h6, p, ul {
   color: #2196F3;
 }
 
+.header-item-list {
+  margin-bottom: 10px;
+}
+
 .flex-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -332,46 +336,6 @@ h1, h2, h3, h4, h5, h6, p, ul {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-@media screen and (min-width: 768px) {
-  .contakt-currents {
-    color: #757575;
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 14px;
-    letter-spacing: 0.02em;
-    text-decoration: none;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    text-decoration: none;
-    padding: 10px 0;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .contakt-currents {
-    padding: 32px 0;
-    font-size: 14px;
-    line-height: 16px;
-  }
-}
-.contakt-currents:hover, .contakt-currents:focus {
-  color: #2196F3;
-  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.contakt-currents:hover svg, .contakt-currents:focus svg {
-  fill: #2196F3;
-  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
 .page::after {
   content: "";
   position: absolute;
@@ -454,7 +418,7 @@ h1, h2, h3, h4, h5, h6, p, ul {
 }
 @media screen and (min-width: 480px) {
   .hero {
-    width: 480px;
+    max-width: 480px;
     height: 400px;
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../imeges/hero/fon-mobile-1x.png);
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../imeges/hero/fon-mobile-1x.png);
@@ -468,7 +432,7 @@ h1, h2, h3, h4, h5, h6, p, ul {
 }
 @media screen and (min-width: 768px) {
   .hero {
-    width: 768px;
+    max-width: 768px;
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../imeges/hero/fon-tab-1x.png);
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../imeges/hero/fon-tab-1x.png);
   }
@@ -481,7 +445,7 @@ h1, h2, h3, h4, h5, h6, p, ul {
 }
 @media screen and (min-width: 1200px) {
   .hero {
-    width: 1600px;
+    max-width: 1600px;
     height: 600px;
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../imeges/hero/fon-1x.png);
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../imeges/hero/fon-1x.png);
@@ -660,7 +624,7 @@ h1, h2, h3, h4, h5, h6, p, ul {
   .about {
     padding: 93px 0;
     padding-left: 0px;
-    width: 1600px;
+    max-width: 1600px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -689,11 +653,6 @@ h1, h2, h3, h4, h5, h6, p, ul {
   .about-wrapper .container {
     min-height: 70px;
     max-height: 98px;
-  }
-}
-@media screen and (min-width: 480px) {
-  .about-list {
-    padding-bottom: 30px;
   }
 }
 @media screen and (max-width: 1199px) {
@@ -961,7 +920,7 @@ h1, h2, h3, h4, h5, h6, p, ul {
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   background-color: #fff;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 767px) {
   .comand-item {
     margin-bottom: 30px;
     width: 100%;
@@ -2122,13 +2081,14 @@ h1, h2, h3, h4, h5, h6, p, ul {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 .menu-container.is-open {
   -webkit-transform: translateX(0);
           transform: translateX(0);
+}
+
+.mobile-menu {
+  margin-top: auto;
 }
 
 .menu-toggle {

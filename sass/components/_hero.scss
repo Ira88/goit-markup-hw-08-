@@ -7,7 +7,7 @@ background-repeat: no-repeat;
 background-position: center;
 background-size: cover;
 @media screen and (min-width:480px) {
-  width: 480px;
+  max-width: 480px;
   height: 400px;
   background-image: linear-gradient(
  rgba(47, 48, 58, 0.4),
@@ -25,7 +25,7 @@ url(../imeges/hero/fon-mobile-2x.png);
 }
 
 @media screen and (min-width: 768px) {
-  width: 768px;
+  max-width: 768px;
   background-image: linear-gradient(
  rgba(47, 48, 58, 0.4),
  rgba(47, 48, 58, 0.4)),
@@ -42,7 +42,7 @@ url(../imeges/hero/fon-tab-1x.png);
 }
 
 @media screen and (min-width: 1200px) {
-  width: 1600px;
+ max-width: 1600px;
   height: 600px;
   background-image: linear-gradient(
  rgba(47, 48, 58, 0.4),

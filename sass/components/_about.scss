@@ -9,7 +9,7 @@
     @media screen and (min-width: 1200px) {
         padding: 93px 0;
         padding-left: 0px;
-        width: 1600px;
+        max-width: 1600px;
     }
     &-item{
             @media screen and (min-width: 768px) {
@@ -37,9 +37,7 @@
         }
     
     &-list{
-        @media screen and (min-width:480px) {
-        padding-bottom: 30px;
-        }
+
         @media screen and (max-width: 1199px) {
             display: flex;
             flex-wrap: wrap;
