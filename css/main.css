@@ -239,8 +239,10 @@ h1, h2, h3, h4, h5, h6, p, ul {
   color: #2196F3;
 }
 
-.header-item-list {
-  margin-bottom: 10px;
+@media screen and (max-width: 1199px) {
+  .header-item-list {
+    margin-bottom: 10px;
+  }
 }
 
 .flex-container {
@@ -630,7 +632,7 @@ h1, h2, h3, h4, h5, h6, p, ul {
 @media screen and (min-width: 768px) {
   .about-item {
     width: 354px;
-    height: 224px;
+    height: 240px;
   }
 }
 .about-wrapper .container {
@@ -1290,8 +1292,8 @@ h1, h2, h3, h4, h5, h6, p, ul {
 }
 
 .svg-client {
-  width: 100%;
-  height: 100%;
+  width: 106px;
+  height: 60px;
   fill: #AFB1B8;
 }
 
